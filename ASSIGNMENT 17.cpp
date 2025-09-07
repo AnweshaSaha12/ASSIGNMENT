@@ -1,11 +1,13 @@
 #include<stdio.h>
 int main()
 {
-    int a,b;
+    int a;
     printf("Enter the number:");
     scanf("%d",&a);
-    b=a-((a/10)*10);
-    printf("The last digit is:%d\n",b);
+    if (a%2==0)
+		printf("The number is even");
+	else
+		printf("The number is odd");
     
 	return 0;
 }
